@@ -7,9 +7,8 @@
       <title>DKamar</title>
       <meta content="DKamar by Lgarin211" name="description" />
       <meta content="Lgarin211" name="author" />
-      <link rel="manifest" href="{{ url('/vendor') }}/assets/images/icons/manifest.json">
       <meta name="msapplication-TileColor" content="#ffffff">
-      <meta name="msapplication-TileImage" content="{{ url('/vendor') }}/assets/images/icons/ms-icon-144x144.png">
+      <meta name="msapplication-TileImage" content="{{ url('/logo.png') }}">
       <meta name="theme-color" content="#ffffff">
       <link href="{{ url('/vendor') }}/assets/css/preloader.css" type="text/css" rel="stylesheet"
           media="screen,projection" />
@@ -21,6 +20,9 @@
           media="screen,projection" />
       <link href="{{ url('/vendor') }}/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"
           id="main-style" />
+      {{-- favicon --}}
+      <link rel="icon" type="image/png" href="{{ url('/logo.png') }}"/>
+      <link rel="icon" type="image/png" href="{{ url('/logo.png') }}"/>
   </head>
 
   <body class="isfullscreen html" data-header="light" data-footer="dark" data-header_align="center"

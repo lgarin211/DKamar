@@ -1,6 +1,8 @@
 @extends('template.master')
 @section('content')
-    <h1 class="white-text center welcome-logo index-welcome">DKamar</h1>
+    <h1 class="white-text center welcome-logo index-welcome">
+        <img src="{{url('/logo.png')}}" alt="" style="width: 15rem;">
+    </h1>
     <div class="fullfixed index-carousel">
         <div class="carousel carousel-fullscreen carousel-slider" id="picas">
 
@@ -10,16 +12,25 @@
     <script>
         var dp={
             0:{
-                bg:'https://akcdn.detik.net.id/community/media/visual/2020/07/13/manga-naruto-1_43.webp?w=250&q=',
-                title:'Alix is PWA multi purpose Mobile App',
-                subtitle:'With pre built ready to use apps'
+                bg:'https://karir.bca.co.id/s3/files/images/shares/1.jpeg',
+                title:'PPA DAN PPTI',
+                subtitle:'Kegiatan Dan Hal-Hal Seru Bersama'
             },
             1:{
-                bg:'https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg',
-                title:'Dua',
-                subtitle:'With pre built ready to use apps'
+                bg:'https://karir.bca.co.id/s3/files/images/shares/6outing.JPG',
+                title:'Kita Bertumbuh Bersama',
+                subtitle:'Ayok Kita bersama Bertunbuh Bahagia'
             },
-
+            2:{
+                bg:'https://demortb.lahoras.my.id/storage/kegiatans/June2023/zyx094WVwgzgAPVqL7En.jpeg',
+                title:'Banyak Hal Yang Bisa Kita Lakukan',
+                subtitle:'Tertawa,Menangis,Terluka dan Bahagia'
+            },
+            3:{
+                bg:'https://demortb.lahoras.my.id/storage/kegiatans/June2023/Rb8kMDuK0RlHtOYNYJdO.jpeg',
+                title:'Dan Kita bersama',
+                subtitle:'Di Rumah Talenta BCA'
+            },
         }
         var a = `
             <div class="carousel-item" href="#carousel-slide-0!">
