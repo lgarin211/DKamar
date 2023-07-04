@@ -90,7 +90,8 @@
                     <div class="spacer"></div>
                     <div class="spacer"></div>
                     <div class="spacer"></div>
-                    <a href="./f1.html" class='waves-effect waves-light btn-large bg-primary'> Daftarkan </a>
+                    {{-- <a href="./f1.html" class='waves-effect waves-light btn-large bg-primary'> Daftarkan </a> --}}
+                    <a href="" class='waves-effect waves-light btn-large bg-primary'> Cara Pakai </a>
                     &nbsp;&nbsp;&nbsp; <a href="#modal1058443539"
                         class='waves-effect waves-light btn-large bg-primary waves-effect waves-light btn modal-trigger'
                         onclick="openModal()"> Buat Hasil </a>
@@ -151,8 +152,7 @@
             <td>keduanya sama-sama menyukai suhu ruangan normal tanpa AC dan lebih nyaman tidur sendiri.</td>
         </tr>
     </table>`
-            let apiKey = 'sk-h2Ca6bE2pSjlIJ6jS';
-            apiKey+='0d3T3BlbkFJxJXlfDNxrOOZtxmKYGgf';
+            let apiKey = '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';
             const apiUrl = 'https://api.openai.com/v1/chat/completions';
             const potdatas = JSON.parse(sessionStorage.getItem('allspark'));
             let p={"pertanyaan": {
@@ -174,8 +174,8 @@
             }
             }
             let question = JSON.stringify(p)+JSON.stringify(potdatas)
-            question += " (Calon pasangan untuk " + pwda +
-                ", berikan persentase kecocokannya, Alasan Positif, Alasan Negatif, sajikan dalam bentuk html tabel";
+            // question += " Calon pasangan untuk " + pwda + ", berikan persentase kecocokannya, Alasan Positif, Alasan Negatif, sajikan dalam bentuk html tabel";
+            question += " Dari Data tersebut carikan 3 pasangan kamar untuk " + pwda + ", Hanya berikan persentase kecocokannya, Alasan Positif (spesifik), Alasan Negatif(spesifik), sajikan dalam bentuk html tabel";
             console.log(question);
             const headers = {
                 'Content-Type': 'application/json',
