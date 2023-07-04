@@ -79,7 +79,9 @@ Route::get('/coreuv', function () {
     return response()->json($p);
 });
 
-
+Route::get('/Auth/Doc/PoinLast', function () {
+    return view('template/Doc');
+});
 
 
 Route::get('/regis', function () {

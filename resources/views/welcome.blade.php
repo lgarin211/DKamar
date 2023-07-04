@@ -13,7 +13,7 @@
         var dp={
             0:{
                 bg:'https://karir.bca.co.id/s3/files/images/shares/1.jpeg',
-                title:'PPA DAN PPTI',
+                title:'PPTI DAN PPBP ',
                 subtitle:'Kegiatan Dan Hal-Hal Seru Bersama'
             },
             1:{
