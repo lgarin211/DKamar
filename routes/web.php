@@ -21,7 +21,7 @@ Route::post("/login", function () {
         ->where("Wa", $_POST["PHO"])
         ->where("Tgl_lahir", $_POST["THO"]);
     // dd($A->dump());
-    $A = $A->get();
+    $A = $A->first();
     // dd($A);
     if (empty($A->Umdp)) {
         return redirect("/regis");
