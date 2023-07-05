@@ -56,34 +56,20 @@
                 "pertanyaan": {
                     "nama": ["Siapa Namamu?", "text1", "{{session()->get('Name')}}"],
                     "pertanyaan_1": ["Jam berapa kamu tidur di malam hari?", "text"],
-                    "pertanyaan_2": ["Apa agama kamu?", "select", ["Kristen", "Katolik", "Konghucu", "Islam", "Hindu",
-                        "Budha"
-                    ]],
-                    "pertanyaan_3": ["Kondisi lampu tidur Mati / Menyala?", "select", ["Mati", "Menyala"]],
-                    "pertanyaan_4": ["berapa Suhu saat kamu Tidur (c)?", "number"],
-                    "pertanyaan_5": ["Memilih tidur sendiri atau tidak?", "select", ["Tidur Sendiri",
-                        "Tidak Tidur Sendiri"
-                    ]],
-                    "pertanyaan_6": ["kamu berasal dari SMA atau SMK?", "select", ["SMA", "SMK"]],
-                    "pertanyaan_7": ["Apa hobi kamu?", "text"],
-                    "pertanyaan_8": ["Apakah akan Sering menelpon keluarga?", "select", ["Ya Akan Sering",
-                        "Mungkin Agak Sering", "Beberapa Saat", "Tidak Akan Sering"
-                    ]],
-                    "pertanyaan_9": ["Terbiasa bangun sendiri atau alarm ?", "select", ["Bangun Sendiri", "Alarm",
-                        "Keduanya"
-                    ]],
-                    "pertanyaan_10": ["Apa pelajaran favoritmu di jenjang SMA/K?", "text"],
+                    "pertanyaan_2": ["Apa agama kamu?", "select", ["Kristen", "Katolik", "Konghucu", "Islam", "Hindu","Budha"]],
+                    "pertanyaan_3": ["Apa kondisi lampu tidurmu?", "select", ["Mati", "Menyala"]],
+                    "pertanyaan_4": ["Berapa suhu saat Tidur (c)?", "number"],
+                    "pertanyaan_5": ["Maukah tidur sendiri atau tidak?", "select", ["Saya Ingin Memiliki Teman Sekamar","Saya Bisa Tidur Sendiri"]],
+                    "pertanyaan_6": ["Kamu berasal dari ?", "select", ["SMA", "SMK"]],
+                    "pertanyaan_7": ["Apa hobi kamu ?", "text"],
+                    "pertanyaan_8": ["Akankah sering menelpon keluarga?", "select", ["Ya Akan Sering","Mungkin Agak Sering", "Beberapa Saat", "Tidak Akan Sering"]],
+                    "pertanyaan_9": ["Terbiasa bangun sendiri atau alarm ?", "select", ["Bangun Sendiri", "Alarm","Keduanya"]],
+                    "pertanyaan_10": ["Apa pelajaran favoritmu di jenjang?", "text"],
                     "pertanyaan_11": ["Apakah kamu mendengkur saat tidur?", "select", ["Ya", "Tidak"]],
-                    "pertanyaan_12": ["Apa tipe belajarmu?", "select", ["Visual", "Auditorial", "Kinestetik",
-                        "kombinasi dari ketiganya"
-                    ]],
-                    "pertanyaan_13": ["kamu aktif belajar di malam atau pagi hari?", "select", ["Malam", "Pagi"]],
-                    "pertanyaan_14": ["kamu seseorang yang introvert atau extrovert?", "select", ["Introvert",
-                        "Extrovert"
-                    ]],
-                    "pertanyaan_15": ["Apa kamu akan mengajak teman ke kamar ?", "select", ["Hanya saat Belajar",
-                        "Akan Sering", "tidak akan", "dalam keadaan kusus"
-                    ]],
+                    "pertanyaan_12": ["Apa tipe belajarmu?", "select", ["Visual", "Auditorial", "Kinestetik","kombinasi dari ketiganya"]],
+                    "pertanyaan_13": ["kamu aktif belajar di malam atau pagi hari?", "select", ["Malam", "Pagi", "Keduanya"]],
+                    "pertanyaan_14": ["kamu seseorang yang introvert atau extrovert?", "select", ["Introvert","Extrovert"]],
+                    "pertanyaan_15": ["Apa kamu akan mengajak teman ke kamar ?", "select", ["Hanya saat Belajar","Akan Sering", "tidak akan", "dalam keadaan kusus"]],
                 }
             };
             const pertanyaanContainer = document.getElementById('pertanyaanContainer');
@@ -166,7 +152,7 @@
 
             sendDataViaGET('/Shadip', ump);
             // sessionStorage.setItem('allspark', JSON.stringify(ump));
-            alert(name + " Sudah di Simpan")
+            alert(name + " Sudah di Simpan, Terima Kasih ya sudah menyelesaikannya");
             window.location.href = "/core";
         }
 
@@ -174,10 +160,8 @@
             const query = Object.keys(data)
                 .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
                 .join("&");
-
             const fullUrl = `${url}?${query}`;
             console.log(fullUrl);
-
             return fetch(fullUrl, {
                     method: 'GET',
                     headers: {

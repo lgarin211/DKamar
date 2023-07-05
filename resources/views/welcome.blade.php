@@ -68,6 +68,6 @@
     </script>
 
     <div class="center index-start">
-        <a href="{{url('login')}}" class='waves-light btn-large bg-primary'>Daftar</a>
+        <a href="{{url('regis')}}" class='waves-light btn-large bg-primary'>Daftar</a>
     </div>
 @endsection

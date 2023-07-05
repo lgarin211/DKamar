@@ -152,7 +152,7 @@
             <td>keduanya sama-sama menyukai suhu ruangan normal tanpa AC dan lebih nyaman tidur sendiri.</td>
         </tr>
     </table>`
-            let apiKey = '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';
+            let apiKey = '';
             const apiUrl = 'https://api.openai.com/v1/chat/completions';
             const potdatas = JSON.parse(sessionStorage.getItem('allspark'));
             let p={"pertanyaan": {

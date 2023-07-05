@@ -8,7 +8,7 @@
             @csrf
                 <div class="row">
                     <div class="input-field col s10 offset-s1">
-                        <input id="name3" name="Nama" type="text" class="validate">
+                        <input required id="name3" name="Nama" type="text" class="validate">
                         <label for="name3">Namamu</label>
                     </div>
                 </div>
@@ -18,7 +18,8 @@
                             <option value="PPTI 17">PPTI 17</option>
                             <option value="PPTI 18">PPTI 18</option>
                             <option value="PPTI 19">PPTI 19</option>
-                            <option value="PPBP 4">PPBP 6</option>
+                            <option value="PPBP 5">PPBP 5</option>
+                            <option value="PPBP 6">PPBP 6</option>
                         </select>
                         <label for="email3">Kelas</label>
                     </div>
@@ -29,18 +30,18 @@
                             <option value="Laki-laki">Laki-Laki</option>
                             <option value="Perempuan">Perempuan</option>
                         </select>
-                        <label for="GPl">Gender</label>
+                        <label for="GPl">Jenis Kelamin</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s10 offset-s1">
-                        <input id="pass3" type="date" name="tgl" class="validate">
+                        <input required id="pass3" type="date" name="tgl" class="validate">
                         <label for="pass3">Tanggal Lahir</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s10 offset-s1">
-                        <input id="phone3" name="Wa" type="tel" class="validate">
+                        <input required id="phone3" name="Wa" type="tel" class="validate">
                         <label for="phone3">Nomor Whatapps</label>
                     </div>
                 </div>
